@@ -1,0 +1,123 @@
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  animation-fill-mode: forwards;
+
+}
+
+.main-section{
+  height: 95vh;
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@media (min-height: 768px) {
+  .main-section{
+    padding-top: 250px;
+  }
+}
+
+.logo{
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.title-thin{
+  font-weight: 100;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+@media (min-height: 768px){
+  .title-thin{
+    font-size: 40px;
+  }
+}
+
+.screenshot{
+  display: none;
+  max-width: 80%;
+}
+
+@media (min-width: 768px) {
+  .screenshot{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+.bg-green-gradient {
+  /* Thanks uigradients! */
+  background: #1D976C; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #1D976C , #93F9B9); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #1D976C , #93F9B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.fadein {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.footer{
+  width: 100%;
+  background: #363636;
+  padding: 15px;
+  color: #f3f3f3;
+  font-weight: 200;
+  text-align: right;
+  z-index: 10;
+}
+
+.footer a{
+  color: #49EAB2;
+}
